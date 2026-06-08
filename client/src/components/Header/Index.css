@@ -1,0 +1,58 @@
+/* Основной контейнер хедера */
+header {
+    background-color: var(--primary-color);
+    height: 125px;
+    /* Используем flexbox для удобного позиционирования дочерних элементов */
+    display: flex;
+    /* Выравниваем элементы по вертикали по центру */
+    align-items: center;
+    /* Включаем box-sizing для корректного расчёта padding и border */
+    box-sizing: border-box;
+    /* Устанавливаем горизонтальные отступы */
+    padding: 0px 25px 0px 25px;
+
+    box-shadow: var(--shadow-decoration);
+    z-index: 999;
+}
+
+/* Логотип */
+.header-logo {
+    box-sizing: border-box;
+    height: 100%; /* Занимает всю высоту хедера */
+    padding: 15px; /* Внутренний отступ */
+}
+
+/* Текст заголовка */
+.header-text {
+    font-family: 'Bicubik';
+    line-height: 35px;
+    font-size: 25pt;
+    /* Рекомендация: избегайте фиксированной ширины, если она не обязательна */
+    /* Это может привести к проблемам с адаптивностью */
+    /* width: 400px; */
+    /* Если ширина нужна для выравнивания, рассмотрите flex-grow/flex-shrink */
+    /* flex-grow: 1; - займёт доступное пространство */
+    /* flex-shrink: 1; - будет уменьшаться при нехватке места */
+    /* flex-basis: 0; - начнёт растягиваться с нуля пропорционально остальному */
+    /* Пример: flex: 1 1 0px; */
+    /* flex: 1 1 0px; */
+    width: 400px;
+}
+
+/* Контейнер профиля пользователя (позиционируется справа) */
+.header-profile {
+    display: flex;
+    align-items: center;
+    /* Автоматический отступ слева, выталкивает элемент вправо */
+    margin-left: auto;
+}
+
+/* Отступы между элементами внутри .header-profile */
+/* Применяем отступ только ко всем элементам, кроме первого */
+.header-profile > *:not(:first-child) {
+    margin-left: 5px;
+}
+
+.profile-action--logout {
+    color: var(--accent-color-2)
+}

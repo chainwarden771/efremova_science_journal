@@ -1,0 +1,7 @@
+.checkbox, .label {
+    cursor: pointer;
+}
+
+.label {
+    width: fit-content;
+}

@@ -1,0 +1,7 @@
+export const AUTH_REQUIRED = 'AUTH_REQUIRED';
+
+export const VALIDATION_ERROR = 'VALIDATION_ERROR';
+
+export const INTERNAL_ERROR = 'INTERNAL_ERROR';
+
+export const NETWORK_ERROR = 'NETWORK_ERROR';

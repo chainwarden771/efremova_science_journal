@@ -1,0 +1,33 @@
+.captcha-form, .captcha-data, .profile-data--captcha {
+    display: flex;
+    flex-direction: column;
+}
+
+.captcha-form {
+    margin: 5% auto;
+    width: 600px;
+}
+
+.captcha-form__header {
+    text-align: center;
+    font-weight: 1;
+}
+
+.captcha-data > :not(:first-child) {
+    margin-top: 15px;
+}
+
+.captcha-form > .captcha-data:not(:nth-last-child(-n+2)) {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color-2);
+}
+
+.captcha-form__submit { 
+    margin: 35px auto !important;
+    margin-bottom: 0px !important;
+    width: 250px;
+}
+
+.profile-data--captcha {
+    align-items: center;
+}

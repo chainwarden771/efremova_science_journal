@@ -1,0 +1,62 @@
+main {
+    background-color: var(--secondary-color-1);
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: var(--primary-color);;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    box-sizing: border-box;
+    padding: 0px min(350px, 5vw) 0px min(350px, 5vw);
+
+    z-index: 999;
+}
+
+.footer-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+    width: 200px;
+}
+
+.footer-contact-1 {
+    width: 150px;
+    word-break: normal;
+    white-space: nowrap;
+    padding-right: 30px;
+
+    background-image: url("./telegram.svg");
+    background-position: right center;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-logo {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+}
+
+.description-text {
+    line-height: 25px;
+    font-size: 16pt;
+}
+
+.element-decoration--panel {
+    box-sizing: border-box;
+    padding: 25px 65px 30px 65px;
+    width: clamp(600px, 50vw, 1200px);
+    
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--shadow-decoration)
+}

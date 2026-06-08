@@ -1,0 +1,41 @@
+.register-form, .register-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form {
+    margin: 5% auto;
+    width: 600px;
+}
+
+.register-form__header {
+    text-align: center;
+    font-weight: 1;
+}
+
+.register-data > :not(:first-child) {
+    margin-top: 15px;
+}
+
+.register-form > .register-data:not(:nth-last-child(-n+2)) {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color-2);
+}
+
+.profile-data--checkbox > :not(:first-child)::before {
+    margin-left: 7.5px;
+    content: "/";
+    position: relative;
+    left: -5px;
+}
+
+.register-form__submit { 
+    margin: 35px auto !important;
+    margin-bottom: 0px !important;
+    width: 250px;
+}
+
+.register-form__private-policy {
+    text-align: center;
+    font-size: 12pt;
+}

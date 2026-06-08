@@ -1,0 +1,36 @@
+.decoration-image {
+    position: absolute;
+    width: 35%;
+}
+
+.dim-1, .dim-2 {
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.dim-1 {
+    left: 25%;
+}
+
+.dim-2 {
+    left: 75%;
+}
+
+@media screen and (max-width: 1000px){
+    .dim-1 {
+        width: 350px;
+        left: 250px;
+    }
+
+    .dim-2 {
+        width: 350px;
+        left: 750px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .dim-1, .dim-2 {
+        width: 350px;
+        top: 400px;
+    }
+}

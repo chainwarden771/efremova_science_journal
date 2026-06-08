@@ -1,0 +1,37 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--secondary-color-4);
+    z-index: 9999;
+}
+
+.modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    min-width: 350px;
+    max-width: 600px;
+    padding: 25px;
+
+    border-radius: 12px;
+    background: var(--primary-color);
+    box-sizing: border-box;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+    font-size: 18px;
+}
