@@ -32,17 +32,14 @@ export default [
     rules: {
       ...reactHooks.configs.recommended.rules,
 
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
 
       'no-console': 'warn',
       'prefer-const': 'error',
 
       eqeqeq: ['error', 'always'],
       curly: ['error', 'all'],
-    }
+    },
   },
 
   eslintConfigPrettier,
