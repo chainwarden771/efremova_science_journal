@@ -31,6 +31,7 @@ const Register = () => {
         ></Input>
         <Input
           onChange={({ target }) => setCredentials((prev) => ({ ...prev, login: target.value }))}
+          maxlength="12"
           name="login"
           placeholder="Логин..."
           value={credentials.login}

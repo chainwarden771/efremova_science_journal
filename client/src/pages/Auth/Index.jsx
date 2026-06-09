@@ -18,6 +18,7 @@ const Auth = () => {
 
       <section className="captcha-data">
         <Input
+          maxlength="12"
           name="fullname"
           placeholder="Логин..."
           onChange={({ target }) => setCredentials((prev) => ({ ...prev, login: target.value }))}
