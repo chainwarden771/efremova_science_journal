@@ -28,6 +28,12 @@ const PostSchema = new mongoose.Schema({
     maxlength: 100,
   },
 
+  autorFullName: {
+    type: String,
+    maxlength: 45,
+    required: true,
+  },
+
   author: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',

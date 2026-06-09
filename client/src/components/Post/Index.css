@@ -1,85 +1,84 @@
 .post-item {
-    margin: 0 auto;
-    margin-top: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .post-item:last-child {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.post-item__publisher-spine, .publisher-area, .post-item__footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.post-item__publisher-spine,
+.publisher-area,
+.post-item__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .publisher-area > span {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .post-item__publisher-spine {
-    justify-content: space-between;
-}
-
-.post-item__post-header {
-
-}
-
-.post-item__publisher-spine {
-    
+  justify-content: space-between;
 }
 
 .post-hat {
-    margin-top: 15px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    background-color: var(--secondary-color-3);
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: var(--secondary-color-3);
 }
 
 .post-item__post-header {
-    opacity: 0.80;
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -45%);
-    color: var(--white-text-color);
-    white-space: nowrap;
+  text-align: center;
+  opacity: 0.8;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -45%);
+  color: var(--white-text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 75%;
 }
 
 .post-hat > img {
-    width: 100%;
-    opacity: 0.80;
+  width: 100%;
+  opacity: 0.8;
 }
 
 .post-hat:hover > img {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .post-hat:hover > .post-item__post-header {
-    opacity: 1;
+  opacity: 1;
 }
 
 .post-item__footer {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .post-item__footer > :not(:first-child) {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .post-item__rating {
-    width: 128px;
-    height: 32px;
+  width: 128px;
+  height: 32px;
 }
 
 .post-item__rating-shadow {
-    position: absolute;
-    background-image: url("./assets/icons/rate-icon.svg");
-    background-repeat: repeat-x;
+  position: absolute;
+  background-image: url('./assets/icons/rate-icon.svg');
+  background-repeat: repeat-x;
 
-    opacity: 0.25;
-    width: 128px;
-    height: 32px;
+  opacity: 0.25;
+  width: 128px;
+  height: 32px;
 }

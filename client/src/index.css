@@ -41,9 +41,6 @@ body {
   min-height: max(800px, 100vh);
   min-width: max(1000px, 100vw);
 
-  /* height: 100vh;
-  width: 100vw; */
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,12 +60,12 @@ body {
   /* Ацентирование внимание */
   --accent-color-1: rgb(37, 33, 240);
   --accent-color-2: rgb(240, 33, 33);
-  --accent-color-3: #389CFF;
+  --accent-color-3: #389cff;
   --accent-color-4: #3859ff;
   --decent-color: rgb(144, 144, 144);
-  
+
   /* Дополнительные цвета */
   --icon-color-1: rgb(91, 91, 91);
 
-  --shadow-decoration: 3px 3px 10px #c5c4c4;
+  --shadow-decoration: 3px 3px 10px #00000046;
 }

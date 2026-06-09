@@ -8,6 +8,7 @@ import multer from 'multer';
 import { verifySession } from '../../middleware/verifySession.js';
 import { publish } from './publish.js';
 import { read } from './read.js';
+import { explore } from './explore.js';
 
 // ============================
 // Инициализация
@@ -35,6 +36,6 @@ postsRouter.post(
 );
 
 postsRouter.get('/read/:id', read);
-// postsRouter.post('/explore', register);
+postsRouter.get('/explore', explore);
 
 export { postsRouter };

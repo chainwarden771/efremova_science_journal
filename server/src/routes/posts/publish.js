@@ -39,6 +39,7 @@ async function publish(req, res) {
     const newPost = await createPost({
       ...validatedData,
       publishDate: Date.now(),
+      autorFullName: authorInDB.fullname,
       author: authorInDB._id,
     });
 

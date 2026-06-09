@@ -1,4 +1,3 @@
-import { z } from 'zod';
 import { MongoServerError } from 'mongodb';
 
 // ============================
@@ -6,7 +5,6 @@ import { MongoServerError } from 'mongodb';
 // ============================
 
 import { getPostById } from '../../services/PostService.js';
-import { findByID } from '../../services/UserService.js';
 
 async function read(req, res) {
   try {
@@ -26,8 +24,7 @@ async function read(req, res) {
       });
     }
 
-    const publisher = await findByID(currentPost.author);
-    res.status(200).json({ ...currentPost, autor: publisher.fullname });
+    res.status(200).json({ ...currentPost });
   } catch (error) {
     // 4. Обработка ошибок BD
     if (error instanceof MongoServerError) {
