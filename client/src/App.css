@@ -54,6 +54,7 @@ footer {
 .description-text {
   line-height: 25px;
   font-size: 16pt;
+  word-break: break-word;
 }
 
 .element-decoration--panel {

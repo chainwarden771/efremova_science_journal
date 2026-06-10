@@ -39,7 +39,7 @@ function App() {
             alt="ncfu university logo"
             src={NcfuLogo}
           ></img>
-          <span>Сайт разработан в рамках курсовой работы, студенткой ПИЖ-б-о-22-1 Софией</span>
+          <span>Сайт разработан в рамках курсовой работы, студенткой ПИЖ-б-о-22-1 Софьей</span>
           <div className="footer-more">
             <a href="#" className="footer-contact-1">
               Контакт Telegram
